@@ -13,7 +13,7 @@ pids
 *.pid.lock
 
 # Dependency directories
-node_modules/
+#node_modules/
 
 # Optional npm cache directory
 .npm
@@ -35,9 +35,9 @@ node_modules/
 Thumbs.db
 
 # Cordova
-cordova/platforms/
-cordova/plugins/
-cordova/www/
+#cordova/platforms/
+#cordova/plugins/
+#cordova/www/
 
 
 
