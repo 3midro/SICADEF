@@ -1,92 +1,18 @@
-
 <template>
-  <div id="app">
-
-
-    <!-- Left panel with cover effect -->
-    <div class="panel panel-left panel-cover theme-dark panel-init" data-visible-breakpoint="960">
-      <div class="view view-init" data-name="left">
-        <div class="page">
-          <div class="navbar">
-            <div class="navbar-bg"></div>
-            <div class="navbar-inner sliding">
-              <div class="title">Left Panel</div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="block-title">Left View Navigation</div>
-            <div class="list links-list">
-              <ul>
-                <li><a href="/left-page-1/">Left Page 1</a></li>
-                <li><a href="/left-page-2/">Left Page 2</a></li>
-              </ul>
-            </div>
-            <div class="block-title">Control Main View</div>
-            <div class="list links-list">
-              <ul>
-                <li>
-                  <a href="/captura/" data-view=".view-main" class="panel-close">Captura</a>
-                </li>
-                <li>
-                  <a href="/about/" data-view=".view-main" class="panel-close">About</a>
-                </li>
-                <li>
-                  <a href="/form/" data-view=".view-main" class="panel-close">Form</a>
-                </li>
-                <li>
-                  <a href="#" data-view=".view-main" class="back panel-close">Back in history</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+<div class="page" data-name="login">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+          <span class="if-not-md">Back</span>
+        </a>
       </div>
+      <div class="title">Login</div>
     </div>
-
-    <!-- Right panel with reveal effect-->
-    <div class="panel panel-right panel-reveal theme-dark">
-      <div class="view">
-        <div class="page">
-          <div class="navbar">
-            <div class="navbar-bg"></div>
-            <div class="navbar-inner">
-              <div class="title">Right Panel</div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="block">Right panel content goes here</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Your main view, should have "view-main" class -->
-    <div class="view view-main view-init safe-areas" data-url="/"></div>
-
-
-    <!-- Popup -->
-    <div class="popup" id="my-popup">
-      <div class="view">
-        <div class="page">
-          <div class="navbar">
-            <div class="navbar-bg"></div>
-            <div class="navbar-inner">
-              <div class="title">Popup</div>
-              <div class="right">
-                <a href="#" class="link popup-close">Close</a>
-              </div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="block">
-              <p>Popup content goes here.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Login Screen -->
+  </div>
+  <div class="page-content">
     <div class="login-screen" id="my-login-screen">
       <div class="view">
         <div class="page">
@@ -127,8 +53,8 @@
         </div>
       </div>
     </div>
-
   </div>
+</div>
 </template>
 <script>
   export default (props, { $f7, $update }) => {

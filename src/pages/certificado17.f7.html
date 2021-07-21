@@ -1,0 +1,337 @@
+<template>
+<div class="page" data-name="about">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+          <span class="if-not-md">Back</span>
+        </a>
+      </div>
+      <div class="title">Certificado 17</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="block-title text-align-center">Certificado 17</div>
+    <div class="block block-strong">
+      <form class="list no-store-data" id="my-form">
+        <ul>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">CURP</div>
+                <div class="item-input-wrap">
+                  <input type="text" name="curp" id="curp" placeholder="CURP" required validate style="text-transform:uppercase" data-error-message="Completa este campo" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">¿Se ignora?</div>
+                <div class="item-after">
+                  <label class="toggle toggle-init">
+                    <input type="checkbox" name="ignora" id="ignora" value="no" /><i class="toggle-icon"></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </li>
+         
+                
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Obtener de RENAPO</div>
+                <div class="item-after">
+                  <label class="toggle toggle-init">
+                    <input type="checkbox" name="renapo" id="renapo" value="no" /><i class="toggle-icon"></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">NOMBRE(S)</div>
+                <div class="item-input-wrap">
+                  <input type="text" name="nombre" placeholder="NOMBRE(S)" required validate style="text-transform:uppercase" data-error-message="Completa este campo" />
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">APELLIDO PATERNO</div>
+                <div class="item-input-wrap">
+                  <input type="text" name="paterno" placeholder="APELLIDO PATERNO" required validate style="text-transform:uppercase" data-error-message="Completa este campo" />
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">APELLIDO MATERNO</div>
+                <div class="item-input-wrap">
+                  <input type="text" name="materno" placeholder="APELLIDO MATERNO" required validate style="text-transform:uppercase" data-error-message="Completa este campo" />
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">FECHA DE NACIMIENTO</div>
+                <div class="item-input-wrap">
+                  <input type="text" name="birthday" id="birthday" placeholder="DD/MM/YYYY"  />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+<!--LUGAR DE NACIMIENTO-->
+<li>
+<a class="item-link smart-select smart-select-init" data-close-on-select="true">
+  <select name="entidad_nac" id="entidad_nac">
+    <option value="AS" selected>AGUASCALIENTES</option>
+    <option value="BC">BAJA CALIFORNIA</option>
+    <option value="BS">BAJA CALIFORNIA SUR</option>
+    <option value="CC">CAMPECHE</option>
+    <option value="CL">COAHUILA</option>
+    <option value="CM">COLIMA</option>
+    <option value="CS">CHIAPAS</option>
+    <option value="CH">CHIHUAHUA</option>
+    <option value="DF">CDMX</option>
+    <option value="DG">DURANGO</option>
+    <option value="GT">GUANAJUATO</option>
+    <option value="GR">GUERRERO</option>
+    <option value="HG">HIDALGO</option>
+    <option value="JC">JALISCO</option>
+    <option value="MC">EDO DE MÉXICO</option>
+    <option value="MN">MICHOACÁN</option>
+    <option value="MS">MORELOS</option>
+    <option value="NT">NAYARIT</option>
+    <option value="NL">NUEVO LEÓN</option>
+    <option value="OC">OAXACA</option>
+    <option value="PL">PUEBLA</option>
+    <option value="QT">QUERÉTARO</option>
+    <option value="QR">QUINTANA ROO</option>
+    <option value="SP">SAN LUIS POTOSÍ</option>
+    <option value="SL">SINALOA</option>
+    <option value="SR">SONORA</option>
+    <option value="TC">TABASCO</option>
+    <option value="TS">TAMAULIPAS</option>
+    <option value="TL">TLAXCALA</option>
+    <option value="VZ">VERACRUZ</option>
+    <option value="YN">YUCATÁN</option>
+    <option value="ZS">ZACATECAS</option>
+    <option value="NE">NACIDO EN EL EXTRANJERO</option>
+  </select>
+  <div class="item-content">
+    <div class="item-inner">
+      <div class="item-title">LUGAR DE NACIMIENTO</div>
+    </div>
+  </div>
+</a>
+</li>
+
+
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">¿Es MUJER?</div>
+                <div class="item-after">
+                  <label class="toggle toggle-init color-pink">
+                    <input  type="checkbox" name="genero"  id="genero" value="no" /><i class="toggle-icon"></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li>
+            <a class="button button-fill convert-form-to-data" href="#">REGISTRAR CERTIFICADO</a>
+          </li>
+
+        </ul>
+      </form>
+    </div>
+    <div class="block">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni molestiae laudantium dignissimos est nobis delectus nemo ea alias voluptatum architecto, amet similique, saepe iste consectetur in repellat ut minus quibusdam!</p>
+      <p>Molestias et distinctio porro nesciunt ratione similique, magni doloribus, rerum nobis, aliquam quae reiciendis quasi modi. Nam a recusandae, fugiat in ea voluptates fuga eius, velit corrupti reprehenderit dignissimos consequatur!</p>
+      <p>Blanditiis, cumque quo adipisci. Molestiae, dolores dolorum quos doloremque ipsa ullam eligendi commodi deserunt doloribus inventore magni? Ea mollitia veniam nostrum nihil, iusto doloribus a at! Ea molestiae ullam delectus!</p>
+    </div>
+  </div>
+</div>
+</template>
+<script>
+  export default (props, { $, $on, $f7 }) => {
+    $on('pageInit', () => {
+
+      $('#curp').on('change', function(){
+        if ($("#renapo").checked)
+        $('#renapo').click();
+      });
+
+
+      // guardar persona
+      $('.convert-form-to-data').on('click', function () {
+          var formData = $f7.form.convertToData('#my-form');
+          formData.operacion ='post';
+          formData.genero = (formData.genero.length==1)?'M':'H';
+          formData.blacklist = formData.blacklist.length;
+          formData.ine = formData.ine.length;
+          formData.renapo = formData.renapo.length;
+          formData._x = Math.random();
+          console.log(formData);
+          return false;
+          $f7.dialog.progress();
+          $f7.request.post('https://7perp.geopanda.com.mx/php/adminPersonas.7perp.php', formData, "json")
+              .then(function (res) {
+               console.log(res.data); //reibe el json de respuesta
+                $f7.dialog.close();
+                $f7.dialog.alert(res.data.msj);
+               // regresa la pantalla
+               //$(".link back").click();
+              }).catch(function (err) {
+                $f7.dialog.close();
+                $f7.dialog.alert(err.statusText);
+                console.log(err.xhr)
+                console.log(err.status)
+                console.log(err.message)
+              }).finally(function(e){
+                //limpiaForm();
+              });
+        });
+
+
+ //SET INICIAL DEL CALENDARIO
+ var calendarDefault = $f7.calendar.create({
+          inputEl: '#birthday',
+          //dateFormat: { month: '2-digit', day: '2-digit', year: 'numeric' },
+          dateFormat: 'yyyy-mm-dd',
+          openIn: 'customModal',
+          header: true,
+          footer: true
+        });
+        calendarDefault.setValue([new Date()]);
+
+      
+      
+      $('#renapo').on('change', function(){
+        if (this.checked){
+          
+          var curp2validate = $("#curp").val().toUpperCase();
+          console.log("comienza la validación con renapo "+ curp2validate);
+          if (curpValida(curp2validate)){
+            //envio a validar a renapo
+            $f7.dialog.progress();
+            $f7.request.get('https://7perp.geopanda.com.mx/php/renapo.php', { cveCurp: curp2validate }, "json")
+            //$f7.request.get('http://localhost/geo007erp/src/php/renapo.php', { cveCurp: curp2validate }, "json")
+              .then(function (res) {
+                console.log(res.data);
+                if (res.data.code==200){
+                    //leno el formulario con la informacion rescatada de renapo
+                    if(res.data.msj.genero=="M"){
+                      $('#genero').prop("checked",true);
+                    }else {
+                      $('#genero').prop("checked",false);
+                    }
+                    
+                    var formData = {
+                        'nombre': res.data.msj.tosho_morosho[29],
+                        'entidad_nac':res.data.msj.entidad_nac,
+                        'paterno':res.data.msj.tosho_morosho[3],
+                        'materno': res.data.msj.tosho_morosho[5]
+                        //'genero': ['yes'],
+                      }
+                    $f7.form.fillFromData('#my-form', formData);
+                    calendarDefault.setValue([new Date(res.data.msj.birthday)]);
+                    $f7.dialog.close();
+                }else{
+                  $('#renapo').prop("checked",false);
+                  $f7.dialog.close();
+                  $f7.dialog.alert(res.data.msj);
+                }
+              })
+              .catch(function (err) {
+                $f7.dialog.close();
+                console.log(err.xhr)
+                console.log(err.status)
+                console.log(err.message)
+              });
+            console.log("curp valida");
+          } else{
+            $('#renapo').prop("checked",false);
+            $f7.dialog.close();
+            $f7.dialog.alert("CURP NO VÁLIDA");
+          }
+        }else{
+          limpiaForm();
+        } 
+      });
+
+
+     
+
+     
+      function limpiaForm(){
+        var formData = {
+          'curp': '',
+          'nombre': '',
+          'paterno': '',
+          'materno': '',
+          'genero': ['no'],
+        }
+        $f7.form.fillFromData('#my-form', formData);
+      }
+
+
+
+
+//Función para validar una CURP
+function curpValida(curp) {
+    var re = /^([A-Z][AEIOUX][A-Z]{2}\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])[HM](?:AS|B[CS]|C[CLMSH]|D[FG]|G[TR]|HG|JC|M[CNS]|N[ETL]|OC|PL|Q[TR]|S[PLR]|T[CSL]|VZ|YN|ZS)[B-DF-HJ-NP-TV-Z]{3}[A-Z\d])(\d)$/,
+        validado = curp.match(re);
+	
+    if (!validado)  //Coincide con el formato general?
+    	return false;
+    
+    //Validar que coincida el dígito verificador
+    function digitoVerificador(curp17) {
+        //Fuente https://consultas.curp.gob.mx/CurpSP/
+        var diccionario  = "0123456789ABCDEFGHIJKLMNÑOPQRSTUVWXYZ",
+            lngSuma      = 0.0,
+            lngDigito    = 0.0;
+        for(var i=0; i<17; i++)
+            lngSuma = lngSuma + diccionario.indexOf(curp17.charAt(i)) * (18 - i);
+        lngDigito = 10 - lngSuma % 10;
+        if (lngDigito == 10) return 0;
+        return lngDigito;
+    }
+  
+    if (validado[2] != digitoVerificador(validado[1])) 
+    	return false;
+        
+    return true; //Validado
+}
+     
+    });
+
+    return $render;
+  }
+</script>

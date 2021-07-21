@@ -1,5 +1,6 @@
 
 import HomePage from '../pages/home.f7.html';
+import Login from '../pages/login.f7.html';
 import AboutPage from '../pages/about.f7.html';
 import FormPage from '../pages/form.f7.html';
 
@@ -8,11 +9,28 @@ import LeftPage2 from '../pages/left-page-2.f7.html';
 import DynamicRoutePage from '../pages/dynamic-route.f7.html';
 import RequestAndLoad from '../pages/request-and-load.f7.html';
 import NotFoundPage from '../pages/404.f7.html';
+import captura from '../pages/captura.f7.html';
+import certificado17 from '../pages/certificado17.f7.html';
+
 
 var routes = [
   {
     path: '/',
     component: HomePage,
+    on:{
+      pageInit: function (e, page) {
+        // do something when page initialized
+        console.log("ya inicio la pagina de addPersonasList");
+      }
+    }
+  },
+  {
+    path: '/captura/',
+    component: captura,
+  },
+  {
+    path: '/c17/',
+    component: certificado17,
   },
   {
     path: '/about/',
